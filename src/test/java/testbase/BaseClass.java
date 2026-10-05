@@ -24,7 +24,7 @@ public class BaseClass {
 		logger.info("Starting browser");
 		driver=new ChromeDriver();
 		driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+     //   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         
         logger.info("Browser launched and opened");
         driver.get("https://staging-duola-seven.vercel.app/login");
