@@ -20,9 +20,9 @@ public class AccountLogin extends BasePage {
 WebElement txtmail;
 @FindBy(xpath="//input[@name='password']")
 WebElement txtpswd;
-@FindBy(xpath="//button[noramlize-space()='Sign In']")
+@FindBy(xpath="//button[normalize-space()='Sign In']")
 WebElement btnsignin;
-@FindBy(xpath="//span[@title='milestone2@yopmail.com']")
+ @FindBy(xpath="//span[@title='milestone2@yopmail.com']")
 WebElement txtmsg;
 
 public void setMail (String mail) {
@@ -31,6 +31,11 @@ public void setMail (String mail) {
 
 public void setPswd(String pswd) {
 	txtpswd.sendKeys(pswd);
+}
+
+public String getpagetittle()
+{
+	return driver.getTitle();
 }
 
 public void clickSubmit()
@@ -44,7 +49,7 @@ public void clickSubmit()
 	    
 }
 	
-public String getConfirmationMsg()
+ public String getConfirmationMsg()
 {
 	 WebDriverWait wait =
              new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -57,4 +62,5 @@ public String getConfirmationMsg()
 
      return message.getText();
  }
+
 }

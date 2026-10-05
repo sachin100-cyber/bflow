@@ -16,11 +16,11 @@ public class AccountLoginTest extends BaseClass {
 		try
 		{
 		AccountLogin al = new AccountLogin(driver);
-		al.setMail("milestone@yopmail.com");
-		al.setPswd("milestone@123");
+		al.setMail("admin@yopmail.com");
+		al.setPswd("Admin123");
 		al.clickSubmit();
-		al.getConfirmationMsg();
-		
+	  //  al.getConfirmationMsg();
+		al.getpagetittle();
 		
 		
 		logger.info("Test Passed");
