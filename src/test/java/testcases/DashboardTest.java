@@ -6,7 +6,7 @@ import testbase.BaseClass;
 
 public class DashboardTest extends BaseClass {
 
-    @Test(dependsOnMethods="verify_account_login")
+    @Test
      public void verifytenant(){
 
         Dashboard db = new Dashboard(driver);
@@ -21,7 +21,8 @@ public class DashboardTest extends BaseClass {
         db.PlanDrpdwn();
         db.SelectPlan();
         db.ClickChkBox();
-        db.Createtenat();
+        db.ClickCreate();
+        db.ClickLogout();
 
     }
 

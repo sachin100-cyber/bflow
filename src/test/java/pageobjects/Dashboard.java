@@ -11,7 +11,7 @@ public class Dashboard extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath="//a[@href='/admin/tenants']")
+    @FindBy(xpath="//a[normalize-space()='Tenants']")
     WebElement tenants;
 
     @FindBy(xpath="//button[normalize-space()='Create Tenant']")
