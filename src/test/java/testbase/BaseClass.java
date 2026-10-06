@@ -38,9 +38,9 @@ public class BaseClass {
 		driver.quit();
 	}
 	
-	public String randomString()
+	public String randomString(int lenght)
 	{
-		String generatedString = RandomStringUtils.randomAlphabetic(5);
+		String generatedString = RandomStringUtils.randomAlphabetic(lenght);
 				return generatedString;
 	}
 	

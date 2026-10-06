@@ -43,6 +43,9 @@ public class Dashboard extends BasePage {
     @FindBy(xpath="//button[normalize-space()='Create']")
     WebElement createbtn;
 
+    @FindBy(xpath="//button[normalize-space()='Logout']")
+    WebElement clicklogout;
+
     public void clickTenants()
     {
         tenants.click();
@@ -91,5 +94,10 @@ public class Dashboard extends BasePage {
     public void ClickCreate()
     {
         createbtn.click();
+    }
+
+    public void ClickLogout()
+    {
+        clicklogout.click();
     }
 }
